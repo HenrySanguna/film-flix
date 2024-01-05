@@ -1,0 +1,38 @@
+.poster.flex-container{
+    border-radius: .3rem;
+    -webkit-border-radius: .3rem;
+    -moz-border-radius: .3rem;
+    -ms-border-radius: .3rem;
+    -o-border-radius: .3rem;
+    border-color: white;
+    margin: 1rem;
+    background-color: #ffffff40;
+    padding: .5rem 1rem;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card{
+    width: 50%;
+}
+
+.Proyectos-tecnologias-ul.flex-container {
+    gap: calc(var(--gap) / 2);
+    flex-wrap: wrap;
+}
+
+.Proyectos-tecnologias-li {
+    background-color: #099dc9bd;
+    padding: .3rem .5rem;
+    border-radius: 1rem;
+    -webkit-border-radius: 1rem;
+    -moz-border-radius: 1rem;
+    -ms-border-radius: 1rem;
+    -o-border-radius: 1rem;
+}
+
+
+
+@media screen and (min-width: 768px) {
+    
+}

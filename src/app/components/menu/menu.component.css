@@ -1,0 +1,100 @@
+.Header {
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+    left: 0;
+    padding: 1rem 1.5rem;
+    z-index: 2;
+    background-color: rgba(29, 28, 28, 0.608);
+    font-weight: bold;
+}
+.Header.flex-container{
+    width: 100%;
+    align-items: center;
+}
+
+.Header-logo {}
+
+.Header-img {
+    width: 7.5rem;
+}
+
+.Header-btn {
+    background-color: transparent;
+    border: none;
+    width: 3rem;
+    height: 2rem;
+}
+
+.Header-btn-img {
+    width: 3rem;
+    height: 2rem;
+    cursor: pointer;
+}
+
+.Header-nav {
+    width: 75%;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: -100%;
+    background: rgb(29, 28, 28);
+    transition: left 500ms cubic-bezier(.55, 0, .1, 1);
+    -webkit-transition: left 500ms cubic-bezier(.55, 0, .1, 1);
+    -moz-transition: left 500ms cubic-bezier(.55, 0, .1, 1);
+    -ms-transition: left 500ms cubic-bezier(.55, 0, .1, 1);
+    -o-transition: left 500ms cubic-bezier(.55, 0, .1, 1);
+}
+
+.Header-ul.flex-container {
+    flex-flow: column nowrap;
+    list-style: none;
+    font-weight: bold;
+    letter-spacing: .14em;
+    font-size: 15px;
+    padding: 2rem;
+    align-items: center;
+    gap: 2rem;
+}
+
+.Header-ul.flex-container > a:hover{
+    color: var(--verde);
+}
+
+.active {
+    left: 0;
+    transition: left 500ms cubic-bezier(.55, 0, .1, 1);
+    -webkit-transition: left 500ms cubic-bezier(.55, 0, .1, 1);
+    -moz-transition: left 500ms cubic-bezier(.55, 0, .1, 1);
+    -ms-transition: left 500ms cubic-bezier(.55, 0, .1, 1);
+    -o-transition: left 500ms cubic-bezier(.55, 0, .1, 1);
+}
+
+@media screen and (min-width: 768px) {}
+
+@media screen and (min-width: 992px) {
+    .Header-ul.flex-container {
+        flex-flow: row nowrap;
+        list-style: none;
+        font-weight: bold;
+        letter-spacing: .14em;
+        font-size: .93rem;
+        padding: 0;
+        gap: 2rem;
+    }
+    .Header-nav {
+        width: auto;
+        height: auto;
+        position: static;
+        top: 0;
+        left: 0;
+        background: transparent;
+    }
+    .Header-btn {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+}

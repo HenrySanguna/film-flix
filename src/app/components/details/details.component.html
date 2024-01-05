@@ -1,0 +1,19 @@
+<div class="details">
+  <div class="poster flex-container">
+    <app-card [dataDetails]="data" class="card" />
+    <div class="details-box">
+      <h2>{{ data.name }}</h2>
+      <p>{{ data.overview }}</p>
+      <ul class="Proyectos-tecnologias-ul flex-container">
+        <li
+          *ngFor="let item of data.genres"
+          class="Proyectos-tecnologias-li"
+        >
+          {{ item?.name }}
+        </li>
+      </ul>
+    </div>
+  </div>
+  
+  <app-carousel [dataTv]="data.seasons" [tituloCarousel]="temporadas"/>
+</div>

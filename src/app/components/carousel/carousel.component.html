@@ -1,0 +1,13 @@
+<h2 class="title-seccion">{{tituloCarousel}}</h2>
+<div class="carousel-body flex-container">
+  <div class="carousel">
+    <div class="carousel-box">
+      <img
+        *ngFor="let item of dataTv; let index = index"
+        class="img-{{ index }} slider-img"
+        src="https://image.tmdb.org/t/p/w185/{{ item.poster_path }}"
+        [routerLink]="['/details', item.id]"
+      />
+    </div>
+  </div>
+</div>

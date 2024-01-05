@@ -1,0 +1,62 @@
+<header class="Header flex-container">
+  <h1 class="Header-h1">
+    <a href="" class="Header-a">
+      <img
+        src="./assets/Logo-FilmFlix.png"
+        alt="Logo FilmFlix"
+        class="Header-img"
+      />
+    </a>
+  </h1>
+  <button class="Header-btn">
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      fill="currentColor"
+      [ngClass]="{
+        'bi': true,
+        'bi-list': true,
+        'Header-btn-img': true,
+        'hide': showMenu
+      }"
+      viewBox="0 0 16 16"
+      (pointerdown)="handlerMenu()"
+    >
+      <path
+        fillRule="evenodd"
+        d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"
+      />
+    </svg>
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      fill="currentColor"
+      [ngClass]="{
+        'bi': true,
+        'bi-x-lg': true,
+        'Header-btn-img': true,
+        'hide': !showMenu
+      }"
+      viewBox="0 0 16 16"
+      (pointerdown)="handlerMenu()"
+    >
+      <path
+        d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8 2.146 2.854Z"
+      />
+    </svg>
+  </button>
+  <nav [ngClass]="{'Header-nav': true, 'active': showMenu }">
+    <ul class="Header-ul flex-container">
+      <a href="#Acerca" class="Header-ul-li">
+        <li class="Header-li">Peliculas</li>
+      </a>
+      <a href="#Experiencia" class="Header-ul-li">
+        <li class="Header-li">Programas de televisión</li>
+      </a>
+      <a href="#Proyectos" class="Header-ul-li">
+        <li class="Header-li">Personajs famosos</li>
+      </a>
+      <a href="#Contactos" class="Header-ul-li">
+        <li class="Header-li">Más</li>
+      </a>
+    </ul>
+  </nav>
+</header>
