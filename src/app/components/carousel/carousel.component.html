@@ -3,10 +3,11 @@
   <div class="carousel">
     <div class="carousel-box">
       <img
-        *ngFor="let item of dataTv; let index = index"
+        *ngFor="let item of dataGenres.length > 0 ? dataGenres : dataInherit; let index = index"
         class="img-{{ index }} slider-img"
         src="https://image.tmdb.org/t/p/w185/{{ item.poster_path }}"
         [routerLink]="['/details', item.id]"
+        loading="lazy"
       />
     </div>
   </div>

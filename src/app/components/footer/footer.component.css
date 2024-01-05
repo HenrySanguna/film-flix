@@ -22,7 +22,7 @@
     color: var(--verde);
 }
 
-.Social-a{
+.social-a{
     border-radius: 50%;
     -webkit-border-radius: 50%;
     -moz-border-radius: 50%;
@@ -35,7 +35,7 @@
     justify-content: center;
 }
 
-.Social-a > img{
+.social-a > img{
     width: 1rem;
     height: 1rem;
 }

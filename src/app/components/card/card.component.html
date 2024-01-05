@@ -1,9 +1,9 @@
-<article class="Card-article flex-container">
-    <div class="Card-img">
+<article class="card-article flex-container">
+    <div class="card-img">
         <img [src]="'https://image.tmdb.org/t/p/w185/'+dataDetails.poster_path" [alt]="dataDetails.name" class="img-album" />
-        <div class="Card-play">
-            <span class="button-play" >{{dataDetails.vote_average}}</span>
+        <div class="card-average">
+            <span class="average" >{{dataDetails.vote_average ? dataDetails.vote_average * 10 : 0}}%</span>
         </div>
     </div>
-    <h3 class="Card-h3">{{dataDetails.name}}</h3>
+    <h3 class="card-h3">{{dataDetails.name}}</h3>
 </article>

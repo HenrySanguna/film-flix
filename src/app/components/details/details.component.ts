@@ -29,6 +29,7 @@ export class DetailsComponent implements OnInit {
   };
 
   temporadas: string = "Temporadas";
+  typeSeasons: string = "seasons"
 
   constructor(private _route: ActivatedRoute, private apiService: ApiService) {}
 

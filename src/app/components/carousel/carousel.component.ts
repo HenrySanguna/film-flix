@@ -1,4 +1,4 @@
-import { Component, ElementRef, Input, OnInit, ViewChild } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import { ApiService } from 'src/app/service/api.service';
 
 @Component({
@@ -7,19 +7,25 @@ import { ApiService } from 'src/app/service/api.service';
   styleUrls: ['./carousel.component.css'],
 })
 export class CarouselComponent {
-  @Input() dataTv: any[] = [];
+  @Input() idGenre: number | null = null;
   @Input() tituloCarousel: string = '';
-  data = {};
+  @Input() type: string = '';
+  @Input() dataInherit: any[] = [];
+  dataGenres: any[] = [];
 
-  constructor(private apiService: ApiService){}
+  constructor(private apiService: ApiService) {}
 
   ngOnInit(): void {
-    
+    if (this.type == 'genres') {
+      this.getTvShows(this.idGenre);
+    }
   }
 
-  getDetails(id: number){
-    this.apiService.getDetailTv(id).subscribe((data) => {
-      this.data = data;
-    });
+  getTvShows(id: number | null) {
+    if (id) {
+      this.apiService.getDiscoverGenre(id).subscribe((data) => {
+        this.dataGenres = data.results;
+      });
+    }
   }
 }

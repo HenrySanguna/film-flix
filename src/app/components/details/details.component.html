@@ -4,10 +4,10 @@
     <div class="details-box">
       <h2>{{ data.name }}</h2>
       <p>{{ data.overview }}</p>
-      <ul class="Proyectos-tecnologias-ul flex-container">
+      <ul class="proyectos-tecnologias-ul flex-container">
         <li
           *ngFor="let item of data.genres"
-          class="Proyectos-tecnologias-li"
+          class="proyectos-tecnologias-li"
         >
           {{ item?.name }}
         </li>
@@ -15,5 +15,5 @@
     </div>
   </div>
   
-  <app-carousel [dataTv]="data.seasons" [tituloCarousel]="temporadas"/>
+  <app-carousel [dataInherit]="data.seasons" [type]="typeSeasons" [tituloCarousel]="temporadas"/>
 </div>

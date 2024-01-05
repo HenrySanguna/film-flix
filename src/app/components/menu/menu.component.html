@@ -1,21 +1,21 @@
-<header class="Header flex-container">
-  <h1 class="Header-h1">
-    <a href="" class="Header-a">
+<header class="header flex-container">
+  <h1 class="header-h1">
+    <a href="" class="header-a">
       <img
         src="./assets/Logo-FilmFlix.png"
         alt="Logo FilmFlix"
-        class="Header-img"
+        class="header-img"
       />
     </a>
   </h1>
-  <button class="Header-btn">
+  <button class="header-btn">
     <svg
       xmlns="http://www.w3.org/2000/svg"
       fill="currentColor"
       [ngClass]="{
         'bi': true,
         'bi-list': true,
-        'Header-btn-img': true,
+        'header-btn-img': true,
         'hide': showMenu
       }"
       viewBox="0 0 16 16"
@@ -32,7 +32,7 @@
       [ngClass]="{
         'bi': true,
         'bi-x-lg': true,
-        'Header-btn-img': true,
+        'header-btn-img': true,
         'hide': !showMenu
       }"
       viewBox="0 0 16 16"
@@ -43,19 +43,19 @@
       />
     </svg>
   </button>
-  <nav [ngClass]="{'Header-nav': true, 'active': showMenu }">
-    <ul class="Header-ul flex-container">
-      <a href="#Acerca" class="Header-ul-li">
-        <li class="Header-li">Peliculas</li>
+  <nav [ngClass]="{'header-nav': true, 'active': showMenu }">
+    <ul class="header-ul flex-container">
+      <a href="#Acerca" class="header-ul-li">
+        <li class="header-li">Peliculas</li>
       </a>
-      <a href="#Experiencia" class="Header-ul-li">
-        <li class="Header-li">Programas de televisión</li>
+      <a href="#Experiencia" class="header-ul-li">
+        <li class="header-li">Programas de televisión</li>
       </a>
-      <a href="#Proyectos" class="Header-ul-li">
-        <li class="Header-li">Personajs famosos</li>
+      <a href="#Proyectos" class="header-ul-li">
+        <li class="header-li">Personajs famosos</li>
       </a>
-      <a href="#Contactos" class="Header-ul-li">
-        <li class="Header-li">Más</li>
+      <a href="#Contactos" class="header-ul-li">
+        <li class="header-li">Más</li>
       </a>
     </ul>
   </nav>

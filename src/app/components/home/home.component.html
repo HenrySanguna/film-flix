@@ -1,3 +1,5 @@
 <div class="home">
-    <app-carousel [dataTv]="data" [tituloCarousel]="recomendaciones"/>
+    <div class="sections">
+        <app-carousel *ngFor="let item of dataGenres" [idGenre]="item?.id" [tituloCarousel]="item?.name" [type]="typeGenres"/>
+    </div>
 </div>

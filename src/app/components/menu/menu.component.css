@@ -1,4 +1,4 @@
-.Header {
+.header {
     flex-flow: row nowrap;
     justify-content: space-between;
     position: sticky;
@@ -9,31 +9,31 @@
     background-color: rgba(29, 28, 28, 0.608);
     font-weight: bold;
 }
-.Header.flex-container{
+.header.flex-container{
     width: 100%;
     align-items: center;
 }
 
-.Header-logo {}
+.header-logo {}
 
-.Header-img {
+.header-img {
     width: 7.5rem;
 }
 
-.Header-btn {
+.header-btn {
     background-color: transparent;
     border: none;
     width: 3rem;
     height: 2rem;
 }
 
-.Header-btn-img {
+.header-btn-img {
     width: 3rem;
     height: 2rem;
     cursor: pointer;
 }
 
-.Header-nav {
+.header-nav {
     width: 75%;
     height: 100vh;
     position: absolute;
@@ -47,7 +47,7 @@
     -o-transition: left 500ms cubic-bezier(.55, 0, .1, 1);
 }
 
-.Header-ul.flex-container {
+.header-ul.flex-container {
     flex-flow: column nowrap;
     list-style: none;
     font-weight: bold;
@@ -58,7 +58,7 @@
     gap: 2rem;
 }
 
-.Header-ul.flex-container > a:hover{
+.header-ul.flex-container > a:hover{
     color: var(--verde);
 }
 
@@ -74,7 +74,7 @@
 @media screen and (min-width: 768px) {}
 
 @media screen and (min-width: 992px) {
-    .Header-ul.flex-container {
+    .header-ul.flex-container {
         flex-flow: row nowrap;
         list-style: none;
         font-weight: bold;
@@ -83,7 +83,7 @@
         padding: 0;
         gap: 2rem;
     }
-    .Header-nav {
+    .header-nav {
         width: auto;
         height: auto;
         position: static;
@@ -91,7 +91,7 @@
         left: 0;
         background: transparent;
     }
-    .Header-btn {
+    .header-btn {
         display: none;
     }
 }

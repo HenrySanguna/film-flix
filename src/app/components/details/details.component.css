@@ -16,12 +16,22 @@
     width: 50%;
 }
 
-.Proyectos-tecnologias-ul.flex-container {
+.details-box > h2{
+    font-size: 1.2rem;
+    color: var(--verde);
+    margin-bottom: 1rem;
+}
+
+.details-box > p{
+    margin-bottom: 1rem;
+}
+
+.proyectos-tecnologias-ul.flex-container {
     gap: calc(var(--gap) / 2);
     flex-wrap: wrap;
 }
 
-.Proyectos-tecnologias-li {
+.proyectos-tecnologias-li {
     background-color: #099dc9bd;
     padding: .3rem .5rem;
     border-radius: 1rem;
@@ -34,5 +44,7 @@
 
 
 @media screen and (min-width: 768px) {
-    
+    .poster.flex-container{
+        flex-direction: row;
+    }
 }

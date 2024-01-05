@@ -7,8 +7,8 @@ import { ApiService } from 'src/app/service/api.service';
   styleUrls: ['./home.component.css'],
 })
 export class HomeComponent implements OnInit {
-  data: any[] = [];
-  recomendaciones: string = 'Recomendaciones';
+  dataGenres: any[] = [];
+  typeGenres: string = 'genres';
 
   constructor(private apiService: ApiService) {}
 
@@ -17,8 +17,8 @@ export class HomeComponent implements OnInit {
   }
 
   getDiscover() {
-    this.apiService.getDiscoverTv().subscribe((data) => {
-      this.data = data.results;
+    this.apiService.getGenreTv().subscribe((data) => {
+      this.dataGenres = data.genres;
     });
   }
 }
